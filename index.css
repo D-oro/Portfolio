@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    /* background-color: linen; */
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    min-height: 3.125rem;
+}
+
+nav {
+    /* background-color: yellow; */
+    position: fixed;
+    right: 2rem;
+}
+
+a {
+    margin: 1rem;
+    /* background-color: aliceblue; */
+}
+
+main {
+    /* background-color: antiquewhite; */
+    padding: 1rem;
+}
+
+footer {
+    /* background-color: beige; */
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
