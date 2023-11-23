@@ -1,31 +1,76 @@
 body {
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: var(--yellow-500);
+    color: var(--grey-900);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-color: var(--background-white1);
+    padding: 1rem;
+    height: 80%;
 }
 
 header {
-    /* background-color: linen; */
+    /* background-color: var(--yellow-500); */
     display: flex;
     align-items: center;
-    padding: 1rem;
-    min-height: 3.125rem;
+    padding-left: 1rem;
+    height: 15%;
+    color: var(--grey-900);
+}
+
+footer {
+    background-color: var(--grey-500);
+    height: 5%;
 }
 
 nav {
     /* background-color: yellow; */
     position: fixed;
     right: 2rem;
+    color: var(--grey-900);
 }
 
 a {
     margin: 1rem;
-    /* background-color: aliceblue; */
+    font-size: 1.5rem;
 }
 
-main {
-    /* background-color: antiquewhite; */
-    padding: 1rem;
+
+button:active {
+    /* border: solid 0.5rem var(--green-500); */
+    background-color: var(gray-700);
 }
+
+button {
+    background-color: var(--grey-800);
+    color: var(--grey-100);
+    border: solid 0.5rem var(--grey-500);
+    padding: 0.5rem;
+    border-radius: 3%;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--grey-200);
+}
+
+button:hover {
+    border: solid 0.5rem var(--grey-400);
+    background-color: var(--grey-600);
+}
+
+button:active {
+    border: solid 0.5rem var(--green-500);
+    background-color: var(--grey-800);
+}
+
+/* button:hover {
+    background-color: var(--grey-500);
+    /* color: var(--grey-500); */
+
+/* button:focus {
+    border: solid 0.5rem var(--green-500);
+} */
+
 
 footer {
     /* background-color: beige; */
@@ -34,3 +79,113 @@ footer {
     bottom: 0;
     width: 100%;
 } 
+
+:root {
+    /* main brand */
+  --yellow-900: #4D3914;
+  --yellow-800: #805E21;
+  --yellow-700: #B3842E;
+  --yellow-600: #E6AA3C;
+  --yellow-500: #FFBE42;
+  --yellow-400: #FFCA68;
+  --yellow-300: #FFD78E;
+  --yellow-200: #FFDEA1;
+  --yellow-100: #FFEBC6;
+
+  /* second brand */
+  --purple-500: #680166;
+  --purple-450: #780D76;
+  --purple-400: #871C85;
+  --purple-350: #962E94;
+  --purple-300: #A543A3;
+  --purple-250: #C376C2;
+  --purple-200: #D294D1;
+  --purple-150: #E1B4E0;
+  --purple-100: #F0D8F0;
+
+  /* neutral */
+  --grey-900: #1C2F3C;
+  --grey-850: #2A465A;
+  --grey-800: #315269;
+  --grey-700: #395E78;
+  --grey-600: #406A87;
+  --grey-500: #477597;
+  --grey-450: #5481A1;
+  --grey-400: #638DAB;
+  --grey-350: #729AB6;
+  --grey-300: #83A7C0;
+  --grey-250: #95B4CB;
+  --grey-200: #A8C2D5;
+  --grey-150: #D1E0EA;
+  --grey-100: #E8EFF5;
+
+  /* success */
+  --green-900: #1A5D60;
+  --green-800: #1F7073;
+  --green-700: #248386;
+  --green-600: #299599;
+  --green-550: #2EA8AC;
+  --green-500: #34babf;
+  --green-450: #55C8CC;
+  --green-400: #67CFD2;
+  --green-350: #7AD6D9;
+  --green-200: #8EDCDF;
+  --green-250: #A2E3E6;
+  --green-200: #B8EAEC;
+  --green-150: #CFF1F2;
+  --green-100: #E6F8F9;
+
+  /* warning */
+  --orange-900: #7C3404;
+  --orange-800: #913C04;
+  --orange-700: #A54505;
+  --orange-600: #BA4E06;
+  --orange-500: #cf5707;
+  --orange-450: #D3651B;
+  --orange-400: #D87430;
+  --orange-350: #DD8347;
+  --orange-300: #E2935E;
+  --orange-250: #E7A477;
+  --orange-200: #ECB590;
+  --orange-150: #F0C6AA;
+  --orange-100: #F5D9C6;
+  --orange-050: #FAECE2;
+  
+/* off-white background */
+  --background-white1: #fdfbff;
+  /* --background-white2: #ecebeb;
+  --background-white3: #f2f5fa;
+  --background-white4: #fdf7f2;
+  --background-white5: #f9f6ec;
+  --background-white6: #fbf7f4;
+  --background-white7: #f9f9f9; */
+
+  /* other nice colours */
+  /* --orange: #fea150;
+  --orange2: #eb9741;
+  --purple: #4a2b74;
+  --red: #c65a65;
+  --pink: #f0cbd9;
+  --dark-blue: #20314f;
+  --light-blue: #298aad;
+  --purple2: #411a5e;
+  --lilac: #9e569f;
+  --green2: #008889;
+  --warning-red: #c5022c;
+  --warning-red2: #a40124;
+  --accent-purple: #950194;
+  --background-blue: #0b2154;
+  --accent-brown: #c3695e;
+  --accent-lilac: #927693;
+  --accent-blue: #1984d6;
+  --highlight-blue: #008bca;
+  --highlight-blue: #2497cd;
+  --medium-purple: #950194;
+  --pink: #d200d1;
+  --light-yellow: #ffdb97;
+  --ochre: #e0a26c;
+  --light-brown: #b3776d;
+  --aubergine: #76495c;
+  --blue-purple: #3e2c4a;
+  --magenta: #b9044f; */
+}
