@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    background-color: var(--background-white1);
+    background-color: var(--background-white);
     padding: 1rem;
     height: 80%;
 }
@@ -152,13 +152,16 @@ footer {
   --orange-050: #FAECE2;
   
 /* off-white background */
-  --background-white1: #fdfbff;
-  /* --background-white2: #ecebeb;
-  --background-white3: #f2f5fa;
-  --background-white4: #fdf7f2;
-  --background-white5: #f9f6ec;
-  --background-white6: #fbf7f4;
-  --background-white7: #f9f9f9; */
+--background-white: #FFFDF9;
+--background-white1: #fdfbff;
+--background-white2: #fffcf7;
+--background-white3: #ecebeb;
+--background-white4: #f2f5fa;
+--background-white5: #fdf7f2;
+--background-white6: #f9f6ec;
+--background-white7: #fbf7f4;
+--background-white8: #f9f9f9;
+--background-white9: #FFFDF9;
 
   /* other nice colours */
   /* --orange: #fea150;
