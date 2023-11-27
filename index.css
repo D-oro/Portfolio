@@ -7,6 +7,30 @@ body {
     font-size: 1.6rem;
 }
 
+.skip-to-main-content-link {
+    background-color: var(--green-400) !important;
+    border: solid var(--grey-900) 0.1rem !important;
+    color: var(--grey-900) !important;
+    font-weight: 600;
+    font-size: larger;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    top: 0.5em;
+    width: 10em;
+    opacity: 1;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
+}
+
+.skip-to-main-content-link:not(:focus):not(:hover) {
+    transform: translateY(-4em);
+    opacity: 0;
+}
+
 main {
     background-color: var(--background-white);
     padding: 1.6rem;
@@ -25,7 +49,7 @@ header {
     height: 15%;
     color: var(--grey-900);
     background-color: var(--yellow-500);
-    z-index: 1000; 
+    z-index: 19; 
 }
 
 img {
@@ -47,11 +71,10 @@ nav {
     color: var(--grey-900);
 }
 
-nav a {
+.nav-link {
     margin: 0 1.6rem;
     font-size: 2.2rem;
 }
-
 
 button:active {
     /* border: solid 0.5rem var(--green-500); */
