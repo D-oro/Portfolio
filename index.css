@@ -55,7 +55,6 @@ header {
 main {
     background-color: var(--background-white);
     padding: 15% 3rem;
-    /* height: 100%; */
 }
 
 nav {
@@ -67,54 +66,18 @@ nav {
 }
 
 .nav-link {
-    /* margin: 0 2rem; */
     font-size: 2.2rem;
     text-decoration: none;
     color: var(--grey-900);
     display: flex;
     display: stretch;
-    /* justify-content: center; */
     align-items: center;
     padding: 0 2rem;
-    /* background-color: var(--yellow-500); */
 }
 
 .nav-link:hover {
     background-color: var(--yellow-200);
 }
-
-
-button:active {
-    /* border: solid 0.5rem var(--green-500); */
-    background-color: var(gray-700);
-}
-
-button {
-    background-color: var(--grey-800);
-    color: var(--grey-100);
-    border: solid 0.5rem var(--grey-500);
-    padding: 0.5rem;
-    border-radius: 3%;
-    box-shadow: 0.1rem 0.1rem 0.1rem var(--grey-200);
-}
-
-button:hover {
-    border: solid 0.5rem var(--grey-400);
-    background-color: var(--grey-600);
-}
-
-button:active {
-    border: solid 0.5rem var(--green-500);
-    background-color: var(--grey-800);
-}
-
-/* button:hover {
-    background-color: var(--grey-500);
-    /* color: var(--grey-500); */
-
-/* button:focus {
-    border: solid 0.5rem var(--green-500);
-} */
 
 .links-container {
     display: flex;
