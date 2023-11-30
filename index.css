@@ -83,33 +83,6 @@ nav {
     background-color: var(--yellow-200);
 }
 
-.project-article {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto;
-}
-
-.project-header {
-    grid-column: 1 / span 2;
-}
-
-.project-paragraph {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.project-link {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.project-picture {
-    grid-column: 2;
-    grid-row: 2 / span 2;
-    max-width: 100%;
-    height: auto;
-}
-
 
 button:active {
     /* border: solid 0.5rem var(--green-500); */
@@ -142,6 +115,23 @@ button:active {
 /* button:focus {
     border: solid 0.5rem var(--green-500);
 } */
+
+.links-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.square-link {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 3rem 2rem;
+    background-color: var(--purple-500);
+    color: var(--purple-100);
+    border-radius: 5%;
+    &:hover {
+        background-color: var(--purple-400);
+    }
+}
 
 :root {
     font-size: 10px;
