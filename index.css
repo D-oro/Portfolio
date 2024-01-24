@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     height: fit-content;
     color: var(--grey-900);
-    background-color: var(--yellow-500);
+    background-color: var(--green-150);
     height: 7rem;
 }
 
@@ -48,15 +48,20 @@ nav {
 }
 
 .nav-link:hover {
-    background-color: var(--yellow-200);
+    background-color: var(--green-200);
 }
 
 .nav-link:focus-visible {
-    outline-offset: -0.3rem;
+    outline-offset: -1rem;
+    background-color: var(--green-200);
+}
+
+.active {
+    background-color: var(--background-white);
 }
 
 *:focus-visible {
-    outline-color: var(--green-500);
+    outline: solid 0.3rem var(--grey-300);
 }
 
 @media (max-width: 640px) {
@@ -82,7 +87,7 @@ nav {
 
     .nav-link {
         padding: 0.5rem 0.5rem;
-        border-top: 0.1rem solid var(--yellow-700);
+        border-top: 0.1rem solid var(--grey-500);
     }
 
     .nav-link:first-child {
@@ -90,7 +95,7 @@ nav {
     }
 
     .nav-link:focus-visible {
-        outline-offset: -0.1rem;    
+        outline-offset: -0.3rem;    
     }
 
     main {
@@ -100,28 +105,33 @@ nav {
 
 .links-container {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .contact-link {
     text-decoration: none;
     font-size: 2rem;
     padding: 3rem 2rem;
-    background-color: var(--purple-500);
-    color: var(--purple-100);
-    border-radius: 5%;
+    background-color: var(--grey-150);
+    color: var(--grey-900);
+    border-radius: 0.5em;
+    min-width: fit-content;
+    max-width: 5em;
+    text-align: center;
 }
 
 .contact-link:hover {
-    background-color: var(--purple-400);  
+    background-color: var(--green-200);  
 }
 
 .contact-link:focus-visible {
-    outline-offset: 0.5rem;
+    background-color: var(--green-200);
+    outline-offset: -0.7em;
 }
 
 .skip-to-main-content-link {
-    background-color: var(--green-400) !important;
+    background-color: var(--yellow-500) !important;
     border: solid var(--grey-900) 0.1rem !important;
     color: var(--grey-900) !important;
     font-weight: 600;
@@ -219,16 +229,17 @@ nav {
   --orange-050: #FAECE2;
   
 /* off-white background */
---background-white: #FFFDF9;
---background-white1: #fdfbff;
---background-white2: #fffcf7;
---background-white3: #ecebeb;
---background-white4: #f2f5fa;
---background-white5: #fdf7f2;
---background-white6: #f9f6ec;
---background-white7: #fbf7f4;
---background-white8: #f9f9f9;
---background-white9: #FFFDF9;
+--background-white: #FDFEFE;
+/* --background-white1: #fdfbff;
+--background-white2: #f2f5fa;
+--background-white3: #FFFDF9;
+--background-white4: #fffcf7;
+--background-white5: #ecebeb;
+--background-white6: #fdf7f2;
+--background-white7: #f9f6ec;
+--background-white8: #fbf7f4;
+--background-white9: #f9f9f9; */
+
 
   /* other nice colours */
   /* --orange: #fea150;
