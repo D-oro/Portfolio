@@ -95,7 +95,7 @@ nav {
     }
 
     .nav-link:focus-visible {
-        outline-offset: -0.1rem;    
+        outline-offset: -0.3rem;    
     }
 
     main {
