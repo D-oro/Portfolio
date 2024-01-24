@@ -21,7 +21,8 @@ header {
     justify-content: space-between;
     height: fit-content;
     color: var(--grey-900);
-    background-color: var(--yellow-500);
+    /* background-color: var(--yellow-500); */
+    background-color: var(--grey-150);
     height: 7rem;
 }
 
@@ -48,7 +49,8 @@ nav {
 }
 
 .nav-link:hover {
-    background-color: var(--yellow-200);
+    /* background-color: var(--yellow-200); */
+    background-color: var(--grey-100);
 }
 
 .nav-link:focus-visible {
@@ -56,7 +58,8 @@ nav {
 }
 
 *:focus-visible {
-    outline-color: var(--green-500);
+    outline-color: var(--yellow-500);
+    background-color: var(--yellow-500);
 }
 
 @media (max-width: 640px) {
@@ -100,7 +103,8 @@ nav {
 
 .links-container {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .contact-link {
@@ -108,16 +112,20 @@ nav {
     font-size: 2rem;
     padding: 3rem 2rem;
     background-color: var(--purple-500);
-    color: var(--purple-100);
-    border-radius: 5%;
+    background-color: var(--grey-100);
+    color: var(--grey-900);
+    border-radius: 0.5em;
+    min-width: fit-content;
+    max-width: 5em;
+    text-align: center;
 }
 
 .contact-link:hover {
-    background-color: var(--purple-400);  
+    background-color: var(--grey-150);  
 }
 
 .contact-link:focus-visible {
-    outline-offset: 0.5rem;
+    background-color: var(--yellow-500);
 }
 
 .skip-to-main-content-link {
