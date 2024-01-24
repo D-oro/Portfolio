@@ -51,8 +51,11 @@ nav {
     background-color: var(--yellow-200);
 }
 
-*:focus {
+.nav-link:focus-visible {
     outline-offset: -0.3rem;
+}
+
+*:focus-visible {
     outline-color: var(--green-500);
 }
 
@@ -86,12 +89,12 @@ nav {
         border: none;
     }
 
-    main {
-        padding: 0 5%;
+    .nav-link:focus-visible {
+        outline-offset: -0.1rem;    
     }
 
-    :focus {
-        outline-offset: -0.1rem;
+    main {
+        padding: 0 5%;
     }
 }
 
@@ -100,16 +103,21 @@ nav {
     gap: 2rem;
 }
 
-.square-link {
+.contact-link {
     text-decoration: none;
     font-size: 2rem;
     padding: 3rem 2rem;
     background-color: var(--purple-500);
     color: var(--purple-100);
     border-radius: 5%;
-    &:hover {
-        background-color: var(--purple-400);
-    }
+}
+
+.contact-link:hover {
+    background-color: var(--purple-400);  
+}
+
+.contact-link:focus-visible {
+    outline-offset: 0.5rem;
 }
 
 .skip-to-main-content-link {

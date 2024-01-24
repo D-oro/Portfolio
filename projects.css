@@ -17,6 +17,12 @@
   grid-column: 1;
   grid-row: 3;
   align-self: start;
+  width: fit-content;
+}
+
+.project-link:focus-visible {
+  outline-offset: 0.5rem;
+
 }
 
 .project-picture {
