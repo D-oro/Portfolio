@@ -39,15 +39,23 @@
 }
 
 .back-to-blog-link {
+  display: block;
   font-size: 1.7rem;
-  padding: 0.2em;
-  margin: 0;
-  border-bottom: solid 0.2em var(--yellow-500);
-  color: var(--blue-500);
+  padding: 0.3em;
+  border-bottom: solid 0.2em var(--green-150);
+  color: var(--blue-800);
   width: fit-content;
+  position: absolute;
+  right: 0.8rem;
 }
 
 .back-to-blog-link:hover {
-  background-color: var(--yellow-100);
+  background-color: var(--green-150);
+  color: var(--blue-900);
 }
 
+.back-to-blog-link:focus-visible {
+  background-color: var(--green-150);
+  color: var(--blue-900);
+  outline-offset: -0.3rem;
+}

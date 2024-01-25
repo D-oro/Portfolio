@@ -30,6 +30,7 @@ header {
     height: 4em;
     color: var(--blue-900);
     background-color: var(--green-150);
+    gap: 1rem;
 }
 
 a {
@@ -41,43 +42,30 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    gap: 10%;
     height: 100%;
 }
 
 .skip-to-content {
-    background-color: var(--grey-100);
-    width: fit-content;
-    padding: 0.3em;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
+    padding: 0.2em;
+    margin: 0;
+    border-bottom: solid 0.2em var(--background-white);
     color: var(--blue-900);
-    border: 0.1rem solid var(--blue-200);
-    filter: drop-shadow(7px 7px var(--blue-200));
-
+    width: fit-content;
 }
 
 .skip-to-content:hover {
-    background-color: var(--green-200);
+    background-color: var(--background-white);
+    color: var(--blue-800);
 }
 
 .skip-to-content:focus-visible {
-    background-color: var(--green-200);
-}
-
-.arrow-down {
-    font-size: 2.1rem;
-    background: -webkit-linear-gradient(var(--grey-100), var(--blue-900));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: var(--background-white);
+    color: var(--blue-800);
 }
 
 .doro-logo {
-    padding: 1rem 2rem;
+    padding-left: 1rem;
     max-width: 7%;
     min-width: 7rem;
 }
@@ -87,6 +75,7 @@ nav {
     justify-content: center;
     min-width: fit-content;
     height: 100%;
+    margin-right: 0.5rem;
 }
 
 .nav-link {
@@ -122,7 +111,7 @@ nav {
     outline: solid 0.3rem var(--blue-300);
 }
 
-@media (max-width: 675px) {
+@media (max-width: 700px) {
     main {
         padding: 0 5%;
         padding-bottom: 5%;
@@ -136,7 +125,6 @@ nav {
 
     .doro-logo {
         padding: 0;
-        /* padding-left: 1rem; */
         max-width: 5vw;
         min-width: 7rem;
     }
@@ -145,7 +133,7 @@ nav {
         flex-direction: column;
         gap: 0;
         padding: 0;
-        margin: 0;
+        margin-right: 0.8rem;
         min-width: fit-content;
     }
 
@@ -156,7 +144,7 @@ nav {
 
     .nav-link:focus-visible {
         outline-offset: -0.4rem;
-        outline-width: 0.6rem;
+        outline-width: 0.4rem;
     }
 
     .active {
@@ -179,19 +167,14 @@ nav {
 
     .logo-skiplink-container{
         flex-direction: column;
-        gap: 2rem;
-        /* justify-content: flex-start; */
+        gap: 3rem;
         align-items: flex-start;
         padding: 2.5rem;
-        align-self: flex-start;
     }
 
     .skip-to-content {
-        /* align-items: center; */
-        /* justify-content: center; */
         text-align: center;
     }
-
 }
 
 .links-container {
@@ -220,33 +203,6 @@ nav {
     background-color: var(--green-200);
     outline-offset: -0.7em;
 }
-
-.skip-to-main-content-link {
-    background-color: var(--yellow-500) !important;
-    border: solid var(--blue-900) 0.1rem !important;
-    color: var(--blue-900) !important;
-    font-weight: 600;
-    font-size: larger;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 20;
-    left: 0;
-    right: 0;
-    top: 0.5em;
-    width: 10em;
-    opacity: 1;
-    text-decoration: none;
-    padding: 0.5rem 0.8rem;
-    transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
-}
-
-.skip-to-main-content-link:not(:focus):not(:hover) {
-    transform: translateY(-4em);
-    opacity: 0;
-    outline-offset: 0;
-}
-
-/* .skip-to-content:focus-visible */
 
 :root {
     font-size: 10px;
@@ -321,5 +277,5 @@ nav {
   --grey-100: #E8EFF5;
 
 /* off-white background */
---background-white: #FDFEFE;
+--background-white: #F9F9FB;
 }
