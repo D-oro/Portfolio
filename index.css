@@ -7,11 +7,19 @@ body {
     font-size: 1.6rem;
     line-height: 2.5rem;
     padding-bottom: 5%;
+    font-family: system-ui, Helvetica, Arial, Tahoma, sans-serif;
 }
 
 main {
     background-color: var(--background-white);
-    padding: 2% 5%;
+    padding: 0% 5%;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 0.2rem solid lightgrey;
+    margin: 0;
+    padding: 0.5em 0;
 }
 
 header {
@@ -19,16 +27,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: fit-content;
+    min-height: fit-content;
     color: var(--grey-900);
     background-color: var(--green-150);
-    height: 7rem;
 }
 
 .doro-logo {
     padding: 1rem 2rem;
     max-width: 7%;
     min-width: 7rem;
+}
+
+a {
+    color: var(--grey-700);
+    text-decoration: none;
 }
 
 nav {
@@ -40,7 +52,6 @@ nav {
 
 .nav-link {
     font-size: 2.2rem;
-    text-decoration: none;
     color: var(--grey-900);
     display: flex;
     align-items: center;
@@ -56,6 +67,11 @@ nav {
     background-color: var(--green-200);
 }
 
+.line {
+    height: 0;
+    background-color: transparent;
+}
+
 .active {
     background-color: var(--background-white);
 }
@@ -65,6 +81,11 @@ nav {
 }
 
 @media (max-width: 640px) {
+    main {
+        padding: 0 5%;
+        padding-bottom: 5%;
+    }
+
     header {
         padding: 0;
         margin: 0;
@@ -83,23 +104,35 @@ nav {
         gap: 0;
         padding: 0;
         margin: 0;
+        min-width: fit-content;
     }
 
     .nav-link {
         padding: 0.5rem 0.5rem;
-        border-top: 0.1rem solid var(--grey-500);
-    }
-
-    .nav-link:first-child {
-        border: none;
+        min-width: 4em;
     }
 
     .nav-link:focus-visible {
-        outline-offset: -0.3rem;    
+        outline-offset: -0.4rem;
+        outline-width: 0.6rem;
     }
 
-    main {
-        padding: 0 5%;
+    .active {
+        margin-left: -1.5em;
+        background-color: var(--green-200);
+    }
+
+    .line {
+        height: 0.2rem;
+        background-color: var(--grey-300);
+    }
+
+    .line.before-active {
+        margin-left: -2em;
+    }
+
+    .active + .line {
+        margin-left: -2em;
     }
 }
 
@@ -205,7 +238,7 @@ nav {
   --green-500: #34babf;
   --green-450: #55C8CC;
   --green-400: #67CFD2;
-  --green-350: #7AD6D9;
+  --green-300: #7AD6D9;
   --green-200: #8EDCDF;
   --green-250: #A2E3E6;
   --green-200: #B8EAEC;

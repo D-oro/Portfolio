@@ -1,7 +1,15 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .project-article {
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto;
+  padding: 2rem;
+  box-shadow: inset -1px -1px 5px var(--grey-200);
 }
 
 .project-header {
@@ -19,21 +27,20 @@
   align-self: start;
   width: fit-content;
   padding: 0.5em;
-  color: var(--green-800);
   font-weight: bold;
   text-decoration: none;
 }
 
+.project-link:focus-visible {
+  background-color: var(--green-200);
+}
+
+.project-link:hover {
+  background-color: var(--green-200);
+}
+
 .project-link:visited {
   color: var(--purple-500);
-}
-
-.project-link:focus-visible{
-  background-color: var(--green-200);
-}
-
-.project-link:hover{
-  background-color: var(--green-200);
 }
 
 .project-picture {
@@ -42,8 +49,4 @@
   max-width: 100%;
   height: auto;
   padding-left: 1rem;
-}
-
-hr {
-  margin: 3rem 0;
 }
