@@ -46,7 +46,7 @@
   word-spacing: 0.07em;
   color: var(--grey-800);
   font-weight: 600;
-  padding: 0.7em 0;
+  padding: 0.7em;
 }
 
 .back-to-blog-link {
@@ -74,5 +74,5 @@
 p {
   color: var(--grey-900);
   font-size: 1.6rem;
-  padding: 0 1em;
+  padding: 0 10%;
 }

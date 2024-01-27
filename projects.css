@@ -24,23 +24,6 @@ section {
 .project-link {
   grid-column: 1;
   grid-row: 3;
-  align-self: start;
-  width: fit-content;
-  padding: 0.5em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.project-link:focus-visible {
-  background-color: var(--green-200);
-}
-
-.project-link:hover {
-  background-color: var(--green-200);
-}
-
-.project-link:visited {
-  color: var(--purple-500);
 }
 
 .project-picture {
