@@ -4,8 +4,8 @@ body {
     color: var(--blue-900);
     height: 100vh;
     width: 100vw;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 1.7em;
     padding-bottom: 5%;
     font-family: system-ui, Helvetica, Arial, Tahoma, sans-serif;
 }

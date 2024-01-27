@@ -117,8 +117,28 @@ ul {
   margin: 0;
 }
 
-img {
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 4%;
+}
+
+.img-portrait {
   max-width: 25rem;
+}
+
+.img-landscape {
+  width: 100%;
+}
+
+.image-description {
+  margin: 0;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  color: var(--grey-700);
+  font-weight: 500;
+  border-left: 0.4rem solid var(--blue-150);
 }
 
 pre {
@@ -146,7 +166,7 @@ pre {
     flex-direction: column;
   }
 
-  img{
+  .img-portrait {
     width: 50%;
   }
 }
