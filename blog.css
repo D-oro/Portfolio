@@ -50,7 +50,7 @@
 }
 
 .back-to-blog-link {
-  display: block;
+  display: flex;
   font-size: 1.7rem;
   padding: 0.3em;
   border-bottom: solid 0.2em var(--green-150);
@@ -75,4 +75,11 @@ p {
   color: var(--grey-900);
   font-size: 1.6rem;
   padding: 0 10%;
+}
+
+@media (max-width: 540px) {
+
+  .blog-post-container h1 {
+    padding-top: 2em;
+  }
 }
