@@ -104,6 +104,7 @@
 p {
   color: var(--grey-900);
   font-size: 1.6rem;
+  margin: 0.5em;
 }
 
 .list-image-container {
