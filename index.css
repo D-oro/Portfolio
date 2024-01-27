@@ -85,7 +85,6 @@ nav {
     justify-content: center;
     min-width: fit-content;
     height: 100%;
-    margin-right: 0.5rem;
 }
 
 .nav-link {
@@ -143,7 +142,6 @@ nav {
         flex-direction: column;
         gap: 0;
         padding: 0;
-        margin-right: 0.8rem;
         min-width: fit-content;
     }
 
