@@ -28,8 +28,10 @@ h1 {
     font-size: 2em;
     border-bottom: 0.2rem solid var(--blue-200);
     margin: 0;
+    margin-top: 0.5em;
     padding: 0.5em 0;
     width: 100%;
+    line-height: 1.5em;
 }
 
 header {
