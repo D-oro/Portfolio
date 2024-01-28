@@ -129,7 +129,7 @@ p {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  border: 0.2rem solid var(--grey-200);
+  border-bottom: 0.2rem solid var(--grey-200);
 }
 
 .list-image-container {
