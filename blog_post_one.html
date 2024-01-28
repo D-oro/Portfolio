@@ -41,8 +41,10 @@
         </p>
         <h3>1. Using Firefox Accessibility Inspector</h3>
         <p>
-          Did you know Firefox Dev Tools have integrated accessibility testing tools?
-          There's no need to install any plugins or 'Here's 
+          Did you know Firefox has integrated accessibility testing tools?
+          There's no need to install any plugins or anything, 
+          Firefox comes with an Accessibility Inspector by default. 
+          Here's where to find it:
           <div class="list-image-container">
           <ul>
             <li>Go to any webpage on Firefox</li>
@@ -76,12 +78,31 @@
         </p>
         <h3>2. Using keyboard navigation</h3>
         <p>
-          A great website doesn't require a mouse. 
-          Maybe you already know that you can tab through
-          all interactive elements on a webpage with the Tab key. 
-          You can tab backwards with shift + tab. 
-          There are some html input elements that 
-          you can activate
+          A great website doesn't rely on a mouse for navigation.
+          Ensuring good keyboard navigation can make interacting with your
+          webpage faster and easier for a lot of people.
+          However a lot of developers don't know the keyboard controls for
+          native html elements, so let's change that!  
+          Here are the most common keyboard controls so you can 
+
+          <ul class="keyboard-list">
+            <li><span class="list-item"><p class="keyboard-key">tab</p> to go to next interactive element</span></li>
+            <li><span class="list-item"><p class="keyboard-key">shift</p> + <p class="keyboard-key">tab</p> to go to previous interactive element</span></li>
+            <li><span class="list-item"><p class="keyboard-key">enter</p> to activate links and buttons</span></li>
+            <li><span class="list-item"><p class="keyboard-key">spacebar</p>to press buttons, to tick checkboxes, open select (drop-down) menus</span></li>
+            <li><span class="list-item">
+              <p class="visually-hidden">up arrow</p>
+              <p class="keyboard-key" aria-hidden="true">&nbsp;&uarr;&nbsp;</p>
+              <p class="visually-hidden">up arrow</p>
+              <p class="keyboard-key" aria-hidden="true">&nbsp;&darr;&nbsp;</p> 
+              to move between radio buttons, and drop-down menu items</span></li>
+          </ul>
+
+          <b>Note: not every website is going to implement these in the same way, 
+            but this is how native html elements can be interacted with, at least in theory.
+            A good website to try these out/practice are UK Government websites, for example the
+            <a href="https://design-system.service.gov.uk/components/" class="external-link"><span class="arrow-down" aria-hidden="true">&rarr;&nbsp;</span>GOV.UK Design Systems webpage</a>
+          </b>
         </p>
         <h3>3. Using a screen reader</h3>
         <p>
