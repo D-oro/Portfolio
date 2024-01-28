@@ -72,6 +72,7 @@
   font-size: 2rem;
   color: var(--grey-700);
   font-weight: 800;
+  padding: 0.3em 0;
 }
 
 .blog-post-container h6 {
@@ -134,6 +135,15 @@ tbody tr:nth-child(odd) {
   box-shadow: 0 -0.2rem var(--grey-300), 0 0.2rem var(--grey-300);
 }
 
+.shortcuts-container {
+  display: flex;
+  align-items: center;
+}
+
+article {
+  margin: 1em 0;
+}
+
 .key-cell {
   display: flex;
   align-items: center;
@@ -141,12 +151,13 @@ tbody tr:nth-child(odd) {
 }
 
 .keyboard-key {
-  background-color: var(--grey-900);
-  color: var(--grey-100);
+  background-color: var(--grey-150);
+  color: var(--grey-900);
   padding: 0 0.5rem ;
   border-radius: 0.2rem;
-  border: 0.5rem outset grey;
+  border: 0.5rem outset var(--grey-400);
   width: fit-content;
+  font-weight: 500;
 }
 
 .list-image-container {
