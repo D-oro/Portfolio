@@ -118,6 +118,18 @@ nav {
     background-color: var(--background-white);
 }
 
+.contact-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--blue-100);
+    width: 100%;
+    justify-content: center;
+    height: 10rem;
+}
+
+
 *:focus-visible {
     outline: solid 0.3rem var(--blue-300);
 }
@@ -185,13 +197,10 @@ nav {
     .skip-to-content {
         text-align: center;
     }
-}
 
-.contact-links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-self: center;
+    .contact-links-container {
+        flex-direction: column;
+    }
 }
 
 .external-link {

@@ -144,6 +144,13 @@ article {
   margin: 1em 0;
 }
 
+.date {
+  width: 100%;
+  text-align: right;
+  color: var(--grey-700);
+  font-weight: 600;
+}
+
 .key-cell {
   display: flex;
   align-items: center;
