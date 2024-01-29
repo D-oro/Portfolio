@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Things Every Developer Should Know, Doro Hinrichs</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+</head>
+<body>
+    <header>
+      <div class="logo-skiplink-container">
+        <img src="./images/doroLogo.png" alt="Doro logo" class="doro-logo">
+        <a href="#main" class="skip-to-content"><span class="arrow-down" aria-hidden="true">&darr;&nbsp;</span>Skip to content</a>
+      </div>
+        <nav>
+          <a href="index.html" class="nav-link">About</a>
+          <span class="line" aria-hidden="true"></span>          
+          <a href="projects.html" class="nav-link">Projects</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="skills.html" class="nav-link">Skill Set</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <span class="line before-active" aria-hidden="true"></span>
+          <a href="blog.html" class="nav-link active">Blog</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="blog-post-container">
+        <a href="blog.html" class="back-to-blog-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          back to all blog articles
+        </a>
+        <h1>Three things every developer should know</h1>
+        <h2>Basic accessibility skills for devs</h2>
+        <p class="date">29th January 2024</p>
+        <p>
+          Whether you're already a hot shit developer building the next
+          spotify, or you only just fell out of a coding bootcamp, here are the 
+          three technical things that every developer should know to
+          get started with writing more accessible code.
+        </p>
+        <h3>1. How to use Firefox Accessibility Inspector</h3>
+        <p>
+          Did you know Firefox has integrated accessibility testing tools?
+          There's no need to install any plugins or add-ons, 
+          Firefox comes with an Accessibility Inspector by default. 
+          Here's where to find it:
+          <div class="list-image-container">
+          <ul>
+            <li>Go to any webpage on Firefox</li>
+            <li>Right click</li>
+            <li>Select "Inspect Accessibility Properties"
+              <br/>(the second option from below )</li>
+          </ul>
+          <div class="image-text-container">
+          <img src="./images/inspect_firefox.png" alt="firefox context menu" class="img-portrait">
+          <p class="image-description">Firefox context menu</p>
+          </div>
+        </div>
+        </p>
+        <p>
+        The accessibility inspector contains a lot of useful tools, 
+        including automated testing, a colour perception simulator, a visual 
+        representation of the tabbing order, and the accessibility tree of the whole 
+        page which can be printed to JSON. It's a great tool for a quick colour contrast check,
+        and to inspect element properties in the accessibility tree. 
+        </p>
+        <div class="image-text-container">
+          <img src="./images/firefox_menu.png" alt="firefox accessibility inspector" class="img-landscape">
+          <p class="image-description">Firefox Accessibility Inspector</p>  
+        </div>
+        <p>
+          Check out
+          <a href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/" class="external-link">
+            <span class="arrow-down" aria-hidden="true">&rarr;&nbsp;</span>the Firefox Accessibility Inspector documentation
+          </a>
+          to learn more about this useful tool.
+        </p>
+        <h3>2. How to navigate by keyboard only</h3>
+        <p>
+          A great website doesn't rely on a mouse for navigation.
+          Ensuring good keyboard navigation can make interacting with your
+          webpage faster and easier for a lot of people.
+          However many developers don't know the keyboard controls for
+          native html elements, so let's change that!  
+          Here are the most common keyboard controls: 
+          <table>
+            <caption><h4>Keyboard controls and their functions</h4></caption>
+            <thead>
+              <tr>
+                <th scope="col">Key</th>
+                <th scope="col">Functions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">tab</p></th>
+                <td>go to the next interactive element</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">shift</p>+<p class="keyboard-key">tab</p></th>
+                <td>go to the previous interactive element</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key"><span aria-hidden="true">&crarr;&nbsp</span>Enter</p> or <p class="keyboard-key">return</p></th>
+                <td>activate links and some buttons</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">spacebar</p></th>
+                <td>check checkboxes, click buttons, expand menus </td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell">
+                  <p class="visually-hidden">up arrow</p>
+                  <p class="keyboard-key" aria-hidden="true">&nbsp;&uarr;&nbsp;</p>
+                  <p class="visually-hidden">down arrow</p>
+                  <p class="keyboard-key" aria-hidden="true">&nbsp;&darr;&nbsp;</p> 
+                </th>
+                <td>move between radio buttons, and move between options in select drop-down menus</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">esc</p></th>
+                <td>close pop up menus, overlay modals, close select menus, dismiss notifications</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">spacebar</p></th>
+                <td>scroll down the page</td>
+              </tr>
+              <tr>
+                <th scope="row" class="key-cell"><p class="keyboard-key">shift</p>+<p class="keyboard-key">spacebar</p></th>
+                <td>scroll up the page</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><b>Note:</b> Not every website is going to implement keyboard navigation in the same way, 
+            but this is how native html elements can be interacted with, at least in theory.
+            A good website to try these out on are UK Government websites, for example the
+            <a href="https://design-system.service.gov.uk/components/" class="external-link"><span class="arrow-down" aria-hidden="true">&rarr;&nbsp;</span>GOV.UK Design Systems webpage</a>
+          </p>
+        </p>
+        <h3>3. How to use a screen reader</h3>
+        <p>
+          There is a lot to know about using a screen reader, and a non-disabled developer
+          using a screen reader for development purposes is of course not
+          comparable to usability testing with the experts who use screen readers 
+          to get around the web every day. 
+        </p>
+        <p>
+          That being said, I think there is value in understanding
+          that there are many different ways to perceive the same webpage, 
+          and if you're a visual user you might easily miss a whole 
+          different dimension. 
+        </p>
+        <p>
+          So, to get a first glimpse into a different way to see the world, 
+          I'd like you to open a website (ideally something you built yourself), 
+          and spend a few minutes exploring it using a screen reader. 
+        </p>
+        <h4>
+          How to turn a screen reader on and off on a computer:
+        </h4>
+        <p>
+          Before we get to the controls, let's start with what to do 
+          once the screen reader is running: 
+          Use tab and shift tab to move between interactive elements.
+          That will already give you a better idea about how a page is structured
+          for screen readers. 
+          To read text or other non-interactive elements, you can try 
+          clicking on them using the mouse, or check out the links I included below 
+          for more info on the keyboard controls for each screen reader.
+          Without further ado, here are the keyboard shortcuts to turn  
+          Narrator and VoiceOver on and off:
+        </p>
+        <article>
+          <h5>On Windows</h5>
+          <div class="shortcuts-container">
+          <p class="keyboard-key">Ctrl</p>
+          +<p class="keyboard-key"><span class="visually-hidden">windows key</span><span aria-hidden="true">⊞ Win</span></p>
+          +<p class="keyboard-key"><span aria-hidden="true">&crarr;&nbsp</span>Enter</p>
+        </div>
+        <a class="external-link" href="https://support.microsoft.com/en-us/windows/chapter-3-using-scan-mode-7b2af804-5a2f-90fd-b0e0-672f7cbbf2da#WindowsVersion=Windows_11">
+          <span aria-hidden="true">&rarr;&nbsp;</span>Read more about Narrator controls</a>
+        </article>
+        <article>
+        <h5>On macOS</h5>
+        <div class="shortcuts-container">
+          <p class="keyboard-key">command</p>
+          + <p class="keyboard-key">F5</p>
+        </div>
+        <div">
+        <a class="external-link" href="https://support.apple.com/en-gb/guide/voiceover/vo27972/10/mac/14.0">
+          <span aria-hidden="true">&rarr;&nbsp;</span>Read more about VoiceOver web commands</a>
+        </div>
+        <div>
+          <a class="external-link" href="https://support.apple.com/en-gb/guide/voiceover/unac048/10/mac/14.0">
+          <span aria-hidden="true">&rarr;&nbsp;</span>Read more about the VoiceOver modifier key</a>
+        </div>
+        <div>
+          <a class="external-link" href="https://support.apple.com/en-gb/guide/voiceover/mchlp2719/">
+          <span aria-hidden="true">&rarr;&nbsp;</span>Read more about the VoiceOver Rotor</a>
+        </div>
+        </article>
+        <article>
+        <h5>On Linux</h5>
+        <p>
+          If you run Linux, I'm sure you love open source things, so go 
+          ahead and <a href="https://www.nvaccess.org/about-nvda/" class="external-link"><span aria-hidden="true">&rarr;&nbsp;</span>check out NVDA</a>, 
+          it's the best screen reader of these three options anyway!
+          ("Of course!" I hear you exclaim. "The open source option 
+          is always the best!")
+        </p>
+      </article>
+      <h3>Summary</h3>
+      <p>
+        Thanks for reading! I hope you found this useful. 
+        <br/>
+        I'm always interested in feedback, whether you have some 
+        constructive criticism about what I wrote, or you want to 
+        just share your thoughts, I'm keen to hear from other people who care about
+        accessibility, so please do reach out. 
+      </p>
+      <div class="contact-links-container">
+        <a href="https://www.linkedin.com/in/doro-hinrichs/" class="external-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/D-oro" class="external-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          Github
+        </a>
+        <a href="mailto:doro.codes@gmail.com" class="external-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          Email
+        </a>
+      </div>
+      </section>
+    </main>
+</body>
+</html>

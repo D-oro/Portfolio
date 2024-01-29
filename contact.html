@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact, Doro Hinrichs</title>
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-        <img src="./doroLogo.png" alt="Doro logo" class="doro-logo">
+        <div class="logo-skiplink-container">
+            <img src="./images/doroLogo.png" alt="Doro logo" class="doro-logo">
+            <a href="#main" class="skip-to-content"><span aria-hidden="true">&darr;&nbsp;</span>Skip to content</a>
+          </div>
         <nav>
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">About</a>
+            <span class="line" aria-hidden="true"></span>
             <a href="projects.html" class="nav-link">Projects</a>
+            <span class="line" aria-hidden="true"></span>
             <a href="skills.html" class="nav-link">Skill Set</a>
+            <span class="line before-active" aria-hidden="true"></span>
             <a href="contact.html" class="nav-link active">Contact</a>
+            <span class="line" aria-hidden="true"></span>
+            <a href="blog.html" class="nav-link">Blog</a>
         </nav>
     </header>
     <main id="main">
         <section className="contact-section">
             <h1>Contact</h1>
             <p>Get in touch!</p>
-            <div class="links-container">
-              <a href="https://www.linkedin.com/in/doro-hinrichs/" class="contact-link">LinkedIn</a>
-              <a href="https://github.com/D-oro" class="contact-link">Github</a>
-              <a href="mailto:doro.codes@gmail.com" class="contact-link">Email</a>
+            <div class="contact-links-container">
+              <a href="https://www.linkedin.com/in/doro-hinrichs/" class="external-link">
+                <span aria-hidden="true">&rarr;&nbsp;</span>
+                LinkedIn
+              </a>
+              <a href="https://github.com/D-oro" class="external-link">
+                <span aria-hidden="true">&rarr;&nbsp;</span>
+                Github
+              </a>
+              <a href="mailto:doro.codes@gmail.com" class="external-link">
+                <span aria-hidden="true">&rarr;&nbsp;</span>
+                Email
+              </a>
             </div>
           </section>
     </main>
