@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog, Doro Hinrichs</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+    <link rel="stylesheet" href="broken_button.css"/>
+</head>
+<body>
+    <header>
+      <div class="logo-skiplink-container">
+        <img src="./images/doroLogo.png" alt="Doro logo" class="doro-logo">
+        <a href="#main" class="skip-to-content"><span class="arrow-down" aria-hidden="true">&darr;&nbsp;</span>Skip to content</a>
+      </div>
+        <nav>
+          <a href="index.html" class="nav-link">About</a>
+          <span class="line" aria-hidden="true"></span>          
+          <a href="projects.html" class="nav-link">Projects</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="skills.html" class="nav-link">Skill Set</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <span class="line before-active" aria-hidden="true"></span>
+          <a href="blog.html" class="nav-link active">Blog</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="blog-post-container">
+        <a href="blog.html" class="back-to-blog-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          back to all blog articles
+        </a>
+        <h1>Broken Buttons</h1>
+        <h2>A thought experiment</h2>
+        <h3 class="visually-hidden">
+          Note: This page contains a button
+          without any visual text on it to make a point to
+          visual users that accessibility issues should be treated 
+          as bugs in software development.
+        </h3>
+        <p>Imagine you saw the following button:</p>
+        <a href="broken_page.html" class="blank-button" aria-label="Click here to get free coffee for life!"></a>
+        <p>
+          You might think that the button is broken,
+          that somehow the content is
+          being displayed incorrectly.
+          You'd think it's a bug. 
+        </p>
+        <p>
+          So you tell the web developers
+          who made that button, and they
+          say that whatever issue you have 
+          with the website, it's not
+          a priority. Everything works fine for them.
+        </p>
+        <p>
+          But it gets worse, because you would then find out
+          that other people got the following content: 
+        </p>
+        <audio controls>
+          <source src="/audio/blank_button.mp3" type="audio/mpeg">
+        </audio>
+        <a href="transcript.html">transcript</a>
+        <p>
+          But by the time you found out, if you ever found out, 
+          the promotion was over and you lost out. 
+        </p>
+        <p>
+          That would suck, wouldn't it? 
+        </p>
+        <p>
+          What if that would happen every day,
+          and it was about much more important things?
+          Imagine you encountered a similar issue every
+          time you tried to
+          <a class="external-link" href="https://www.transportforall.org.uk/news/inaccessible-inaccurate-unavailable-how-poor-travel-information-and-planning-tools-are-preventing-disabled-people-from-getting-around/">use public transport,</a>
+          <a class="external-link" href="https://www.digitalhealth.net/2023/05/study-finds-two-thirds-of-uk-gp-surgery-websites-have-accessibility-errors/">access healthcare,</a>
+          <a class="external-link" href="https://theconversation.com/digital-inaccessibility-blind-and-low-vision-people-have-powerful-technology-but-still-face-barriers-to-the-digital-world-212600">or apply for a job?</a>
+        </p>
+        <h3>My plea to you:</h3>
+        <p>
+          Treat accessibility issues as functional bugs, 
+          because that is what they are, and prioritise them accordingly.
+          Pretend like a lifetime supply of free coffee depended on it. 
+        </p>
+      </section>
+    </main>
+</body>
+</html>
