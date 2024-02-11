@@ -75,6 +75,20 @@
   color: var(--blue-700);
 }
 
+.internal-link {
+  padding: 0.3em;
+}
+
+.internal-link:hover {
+  background-color: var(--green-150);
+  color: var(--blue-900);
+}
+.internal-link:focus-visible {
+  background-color: var(--green-150);
+  color: var(--blue-900);
+  outline-offset: -0.3rem;
+}
+
 .back-to-blog-link {
   display: flex;
   font-size: 1.7rem;
