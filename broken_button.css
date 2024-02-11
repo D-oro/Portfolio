@@ -1,0 +1,39 @@
+.blank-button {
+  width: 35rem;
+  height: 7rem;
+  border: 0.5rem outset var(--grey-400);
+  border-radius: 1rem;
+  background: var(--grey-100);
+  box-shadow: 0.3rem 0.3rem 0.3rem var(--grey-400);
+}
+
+.blank-button:hover {
+  background-color: var(--grey-200);
+}
+
+.blank-button:focus-visible {
+  background-color: var(--grey-200);
+  outline-color: var(--blue-400);
+  outline-offset: 0.3rem;
+}
+
+.input-button-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.blank-button-two {
+  width: 12rem;
+  height: 4rem;
+}
+.input-button-container input {
+  height: 3rem;
+  width: 90%;
+}
+
+.input-button-container input:focus-visible {
+  outline-offset: 0.3rem;
+}
