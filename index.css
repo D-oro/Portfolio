@@ -200,6 +200,8 @@ nav {
 
     .contact-links-container {
         flex-direction: column;
+        margin-top: 4rem;
+        height: fit-content;
     }
 }
 
