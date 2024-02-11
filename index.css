@@ -209,7 +209,6 @@ nav {
     align-self: start;
     width: fit-content;
     padding: 0.5em;
-    font-weight: bold;
     text-decoration: none;
 }
   
@@ -294,6 +293,7 @@ nav {
 
   /* grey */
   --grey-900: #414141;
+  --grey-850: #505152;
   --grey-800: #5F6162;
   --grey-700: #6B6E6F;
   --grey-600: #787B7D;

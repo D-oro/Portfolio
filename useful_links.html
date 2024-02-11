@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog, Doro Hinrichs</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+</head>
+<body>
+    <header>
+      <div class="logo-skiplink-container">
+        <img src="./images/doroLogo.png" alt="Doro logo" class="doro-logo">
+        <a href="#main" class="skip-to-content"><span class="arrow-down" aria-hidden="true">&darr;&nbsp;</span>Skip to content</a>
+      </div>
+        <nav>
+          <a href="index.html" class="nav-link">About</a>
+          <span class="line" aria-hidden="true"></span>          
+          <a href="projects.html" class="nav-link">Projects</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="skills.html" class="nav-link">Skill Set</a>
+          <span class="line" aria-hidden="true"></span>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <span class="line before-active" aria-hidden="true"></span>
+          <a href="blog.html" class="nav-link active">Blog</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="blog-post-container">
+        <a href="blog.html" class="back-to-blog-link">
+          <span aria-hidden="true">&rarr;&nbsp;</span>
+          back to all blog articles
+        </a>
+        <h1>Colors and contrast</h1>
+        <h2>Tools to use color accessibly</h2>
+        <p>
+          Here's a list of great resources to find the right color
+          and colour contrasts during development.
+          None of this is sponsored or affiliated in any way, just cool tools I've found
+          over the last few months. 
+          <br/>There's two parts in this blog post you can skip to: 
+          <ol>
+            <li><a href="#check">Check and fix colour contrast issues</a></li>
+            <li><a href="#palette">Build a full colour palette</a></li>
+          </ol>
+        </p>
+
+        <h3 id="check">1) Check and fix colour contrast issues</h3>
+        <p>
+          Most of the time we don't need to create a whole new colour palette from scratch, 
+          just tweak the existing colours to make them more accessible.
+        </p>
+        <h4>Check the colour contrast ratio</h4>
+        <p>
+          To check your text-background contrast in browser,
+          you can use the Firefox Accessibility Inspector. Either run a full check 
+          in the "Check fo issues" tab, or click on the picker icon to 
+          "Pick accessible object from page" and hover over the text element 
+          to get the contrast ratio and related WCAG level. 
+        </p>
+        <div class="image-text-container">
+          <img 
+            alt="Arrow pointing at the Accessibility Picker in Firefox"
+            src="./images/firefox_contrast.png"
+            class="img-landscape"
+          />
+          <p class="image-description">Arrow pointing at the Accessibility Picker in Firefox</p>
+        </div>
+        <a class="external-link" href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/"><span aria-hidden="true">&rarr;&nbsp;</span>Accessibility Inspector Firefox Source Docs</a>
+      
+        <h4>Find better colours</h4>
+        <p>
+          The Accessible Colour Generator by LearnUI is a great tool
+          to quickly find the closest accessible match of a colour combination.
+        </p>
+        <div class="image-text-container">
+          <img 
+            alt="Learn UI Design's Website to find close matching accessible color options"
+            src="./images/learnui.png"
+            class="img-portrait"
+          />
+          <p class="image-description">Learn UI Design's Website to find close matching accessible color options</p>
+        </div>
+        <a class="external-link" href="https://www.learnui.design/tools/accessible-color-generator.html"><span aria-hidden="true">&rarr;&nbsp;</span>Learn UI Accessible color generator: Find the closest accessible match of a colour</a>
+      
+        <h3 id="palette">2) Build a full color palette:</h3>
+        <p>
+          Sometimes we do want to create a full colour palette.
+        </p>
+        <h4>General Tips</h4>
+        <p>
+          This video has some general, practical tips for 
+          creating color palettes for your website or project:
+        </p>
+          <a class="external-link" href="https://youtu.be/yYwEnLYT55c?si=Kn9L1Xr_kyIxQcix"><span aria-hidden="true">&rarr;&nbsp;</span>Youtube video: "How I make UI color palettes" UX Tools</a>
+          <h4>Tools</h4>
+          <p>And these tools are great for building your color palette accessibly:</p>
+        <a class="external-link" href="https://randoma11y.com/"><span aria-hidden="true">&rarr;&nbsp;</span>Randoma11y: Get two random accessible colours</a>
+        <a class="external-link" href="https://venngage.com/tools/accessible-color-palette-generator"><span aria-hidden="true">&rarr;&nbsp;</span>Venngage Accessible Color Palette Generator</a>
+        <a class="external-link" href="http://colorsafe.co/"><span aria-hidden="true">&rarr;&nbsp;</span>Colorsafe: Find accessible options for text ratios contrast</a>
+        <a class="external-link" href="https://contrast-finder.tanaguru.com/"><span aria-hidden="true">&rarr;&nbsp;</span>Tanguru contrast finder: Find color contrasts and accessible alternatives</a>
+        <a class="external-link" href="https://meyerweb.com/eric/tools/color-blend/#FFFFFF:000000:10:hex"><span aria-hidden="true">&rarr;&nbsp;</span>Meyerweb Color Blend Tool: Generate up to 10 blend steps between two colours</a>  
+
+        <h3>Got your draft palette? Check out what it looks like for different people.</h3>
+          <p>
+            You could use Coloring for Colorblindness to have a look at the colors you've picked side to side:
+          </p>
+        <div class="image-text-container">
+          <img 
+            alt="Four colors as seen with protanopia, deuteranopia, tritanopia"
+            src="./images/coloring_for_colorblindness.png"
+            class="img-portrait"
+          />
+          <p class="image-description">Four colors as seen with protanopia, deuteranopia, tritanopia</p>
+        </div>
+        <a class="external-link" href="https://davidmathlogic.com/colorblind"><span aria-hidden="true">&rarr;&nbsp;</span>David Nichols Coloring for colorblindness</a>
+
+        <p>
+          Or, you can add your color scheme on Huemint and then use the Firefox color simulation.
+        </p>
+        <div class="image-text-container">
+          <img 
+            alt="Huemint website seen with Firefox simulation of contrast loss"
+            src="./images/huemint.png"
+            class="img-landscape"
+          />
+          <p class="image-description">Huemint website seen with Firefox simulation of contrast loss</p>
+        </div>
+        <a class="external-link" href="https://huemint.com/brand-intersection/"><span aria-hidden="true">&rarr;&nbsp;</span>Huemint: See brand colours in action</a>
+        <a class="external-link" href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/simulation/index.html"><span aria-hidden="true">&rarr;&nbsp;</span>Firefox Accessibility Inspector Color Vision Simulation Documentation</a>
+        <h3>Summary</h3>
+        <p>
+          Thanks for reading! 
+          <br/>
+          Feedback is always welcome: Whether you want to share
+          your thoughts about what you liked, what could be
+          improved, or just want to chat about accessibility, 
+          feel free to get in touch! 
+        </p>
+        <div class="contact-links-container">
+          <a href="https://www.linkedin.com/in/doro-hinrichs/" class="external-link">
+            <span aria-hidden="true">&rarr;&nbsp;</span>
+            LinkedIn
+          </a>
+          <a href="https://github.com/D-oro" class="external-link">
+            <span aria-hidden="true">&rarr;&nbsp;</span>
+            Github
+          </a>
+          <a href="mailto:doro.codes@gmail.com" class="external-link">
+            <span aria-hidden="true">&rarr;&nbsp;</span>
+            Email
+          </a>
+          </div>
+      </section>
+    </main>
+</body>
+</html>

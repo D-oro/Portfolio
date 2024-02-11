@@ -59,13 +59,15 @@
 
 .blog-post-container h4 {
   letter-spacing: 0.03em;
-  color: var(--blue-800);
-  padding: 0.8em 0;
+  color: var(--grey-850);
+  width: 100%;
+  padding: 1em 0;
+  text-decoration: underline;
 }
 
 .blog-post-container h5 {
   letter-spacing: 0.02em;
-  color: var(--grey-700);
+  color: var(--grey-850);
   padding: 0.3em 0;
 }
 
@@ -177,11 +179,15 @@ ul {
 }
 
 .img-portrait {
-  max-width: 25rem;
+  width: 100%;
+  max-height: 45vh;
+  object-fit: contain;
 }
 
 .img-landscape {
   width: 100%;
+  max-height: 45vh;
+  object-fit: contain;
 }
 
 .image-description {
