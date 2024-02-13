@@ -245,4 +245,8 @@ pre {
   .img-portrait {
     width: 50%;
   }
+
+  .blank-button {
+    width: 50vw;
+  }
 }

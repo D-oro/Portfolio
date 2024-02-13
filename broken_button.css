@@ -37,3 +37,13 @@
 .input-button-container input:focus-visible {
   outline-offset: 0.3rem;
 }
+
+@media (max-width: 540px) {
+  .blank-button {
+    width: 50vw;
+  }
+
+  audio {
+    width: 50vw;
+  }
+}
