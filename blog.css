@@ -185,6 +185,10 @@ ul {
   margin: 0;
 }
 
+li {
+  margin: 1rem;
+}
+
 .image-text-container {
   display: flex;
   flex-direction: column;
