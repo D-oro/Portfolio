@@ -42,6 +42,7 @@ h1 {
     
     a {
         height: 3rem;
+        background-color: var(--blue-100);
     }
 }
 
